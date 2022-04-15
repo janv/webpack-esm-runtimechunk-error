@@ -1,0 +1,14 @@
+{
+  "name": "webpack-esm-runtimechunk-error",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Jan Varwig <jan@varwig.org>",
+  "license": "MIT",
+  "dependencies": {
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2"
+  },
+  "scripts": {
+    "build": "webpack"
+  }
+}
