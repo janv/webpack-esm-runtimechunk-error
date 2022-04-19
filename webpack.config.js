@@ -5,12 +5,20 @@ module.exports = {
       library: {
         type: 'module'
       },
+    },
+    other: {
+      import: './other.mjs',
+      library: {
+        type: 'module'
+      },
+      dependOn: ['main']
     }
   },
-  mode: 'production',
+  mode: 'development',
   devtool: false,
-  optimization: {
-    runtimeChunk: 'single'
+  output: {
+    chunkLoading: 'import',
+    chunkFormat: 'module', 
   },
   experiments: {
     outputModule: true
